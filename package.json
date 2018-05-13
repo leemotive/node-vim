@@ -1,0 +1,26 @@
+{
+  "name": "node-vim",
+  "version": "1.0.0",
+  "description": "open vim or other editor in nodejs",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leemotive/node-vim.git"
+  },
+  "keywords": [
+    "node",
+    "vim"
+  ],
+  "author": "wstation@163.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leemotive/node-vim/issues"
+  },
+  "homepage": "https://github.com/leemotive/node-vim#readme"
+}
