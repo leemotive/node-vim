@@ -11,6 +11,7 @@ var ed = /^win/.test(process.platform) ? 'notepad' : 'vim';
 ed = process.env.VISUAL || process.env.EDITOR || ed;
 
 exports.editor = function(option) {
+    option = option || {};
     var tempFile = path.resolve('/tmp', `temp-${process.pid}${Date.now()}.tmp`)
     return new Promise(function(resolve, reject) {
         var ps = spawn(option.editor || ed, [tempFile], {
@@ -41,6 +42,7 @@ exports.editor = function(option) {
 }
 
 exports.editorSync = function(option) {
+    option = option || {};
     var tempFile = path.resolve('/tmp', `temp-${process.pid}${Date.now()}.tmp`);
 
     spawnSync(option.editor || ed, [tempFile], {
