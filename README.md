@@ -1,5 +1,5 @@
 # node-vim
-open an vim editor in Unix-like system, notepad in windows or specified editor in nodejs.
+open an vim editor in Unix-like system, notepad in windows or specified editor via nodejs.
 
 ## Install
 `
